@@ -4,8 +4,6 @@ A responsive, white and simple [Hexo](http://hexo.io) theme for a personal websi
 
 :cactus: [Demo](https://sergodeeva.github.io/)
 
-![cactus-white](https://cloud.githubusercontent.com/assets/2175271/19885143/62e9269c-a01d-11e6-8e26-e36a36201d88.png)
-
 ## Summary
 
 - [General](#general)
