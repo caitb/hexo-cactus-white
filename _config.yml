@@ -2,6 +2,7 @@ nav:
   Home: /
   About: /about/
   Writing: /posts/
+  Projects: http://github.com/sergodeeva
 
 projects_url: http://github.com/sergodeeva
 
@@ -17,7 +18,7 @@ customize:
     favicon: 
       # eg. generate with http://realfavicongenerator.net/
       desktop:
-        url: /images/favicon.png
+        url: /images/favicon.ico
         gravatar: false
       android:
         url: /images/favicon-192x192.png
@@ -27,7 +28,7 @@ customize:
         gravator: false
     social_links:
         github: http://github.com/sergodeeva
-        facebook: https://www.facebook.com/natalya.kosenko
+        facebook: /
         linkedin: https://www.linkedin.com/in/natalyakosenko/
     show_all_posts: false
     post_count: 10
@@ -38,7 +39,7 @@ rss: false
 
 # Plugins
 plugins:
-    disqus_shortname: sergodeeva
+    disqus_shortname: # Disqus Comments Shortname
     google_analytics: UA-37473492-6 # enter the tracking ID for your Google Analytics
 
 # Miscellaneous
