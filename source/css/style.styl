@@ -34,7 +34,22 @@ body
   @extend $base-style
 
   p
+    font-size: 12px;
+    color: #73777a;
+    line-height: 17px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 3px;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
     hyphens(auto)
+
+  em
+    background: #f9f2f4;
+    font-size: 12px;
+    color: #c7254e;
+    line-height: 24px;
 
   pre,
   code
@@ -69,6 +84,11 @@ body
     text-decoration: none
     background: none
 
+  h6
+    font-size: 12px;
+    text-align: center;
+    display: block
+
   h1 a:hover,
   .h1 a:hover,
   h2 a:hover,
@@ -77,6 +97,58 @@ body
   h5 a:hover,
   h6 a:hover
     underline(6px, $color-link)
+
+  h1, h2, h3, h4, h5, h6
+    font-family: "TimesNewRomanPS-ItalicMT", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans
+    -webkit-font-smoothing: initial
+    font-weight: 300
+    color: var(--text-color)
+    line-height: 1.35
+    font-variant-numeric: lining-nums
+    margin-bottom: 1em
+
+  h1
+    padding-bottom: .4rem
+    font-size: 2.2rem
+    line-height: 1.3
+
+
+  h2
+    font-size: 1.75rem
+    line-height: 1.225
+    margin: 35px 0px 15px 0px
+
+
+  h3
+    font-size: 1.4rem
+    line-height: 1.43
+    margin: 20px 0px 7px 0px
+
+
+  h4
+    font-size: 1.2rem
+
+
+  h5
+    font-size: 1rem
+
+
+  h6
+    font-size: 12px
+    color: #777
+
+
+  h1 strong,
+  h2 strong,
+  h3 strong,
+  h4 strong,
+  h5 strong,
+  h6 strong
+    font-family: "Pacifico", cursive
+    text-shadow: 0.4vw 0.4vw #dcfbfc
+    color: #11a9af
+    margin: 0.5em 0 0.7em
+
 
 @media (min-width: 540px)
   .image-wrap
@@ -130,10 +202,13 @@ pre
   border: 1px dotted #666
   overflow-x: auto
 code
-  -webkit-border-radius: 2px
+  margin: 0 2px
+  padding: 2px 4px
   border-radius: 2px
-  background: #eee
-  padding: 0 5px
+  font-family: Source Sans Pro, Roboto Mono, Monaco, courier, monospace !important
+  font-size: 12px
+  color: #e96900
+  background-color: #f8f8f8
 pre code
   border: none
   display: block
