@@ -5,6 +5,20 @@
 
 global-reset()
 
+@font-face {
+  font-family: 'cathsgbr';
+  src: url("fonts/cathsgbr.eot");
+  src: url("fonts/cathsgbr.eot?#iefix") format("embedded-opentype"), url("fonts/cathsgbr.woff") format("woff"), url("fonts/cathsgbr.ttf") format("truetype"), url("fonts/cathsgbr.svg#cathsgbr") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("//at.alicdn.com/t/font_1473170564_3825922.eot");
+  /* IE9*/
+  src: url("//at.alicdn.com/t/font_1473170564_3825922.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1473170564_3825922.woff") format("woff"), url("//at.alicdn.com/t/font_1473170564_3825922.ttf") format("truetype"), url("//at.alicdn.com/t/font_1473170564_3825922.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+
 *,
 *:before,
 *:after
@@ -12,7 +26,7 @@ global-reset()
 
 html
   height: 100%
-  border-top: 2px solid $color-text
+  //border-top: 2px solid $color-text
   -webkit-text-size-adjust: 100%
   -ms-text-size-adjust: 100%
 
@@ -28,6 +42,10 @@ body
   display: flex
   flex-direction: column
   antialias()
+
+#title h1
+  font-weight: 500
+  font-family: cathsgbr
 
 .content
   flex: 1
