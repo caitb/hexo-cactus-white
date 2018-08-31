@@ -1,7 +1,8 @@
 nav:
   Home: /
   Tags: /tags/
-  Writing: /posts/
+#  Writing: /posts/    #这里是指博客服务器地址
+  Archives: /Archives/ #这里是指本地静态文件
   Projects: http://github.com/caitb
   Search: /Search/
 
