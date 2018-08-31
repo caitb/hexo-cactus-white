@@ -1,0 +1,24 @@
+<div id="archive">
+
+    <div id="tag-cloud">
+        <% site.tags.map(function(tag, index) { %>
+            <a class="tag<%= Math.round(Math.random() * 3) %>" data-name="tag-<%= tag.name %>"><%= tag.name %></a>
+        <% }) %>
+    </div>
+
+    <% site.tags.map(function(tag, index){ %>
+        <ul class="post-list">
+            <h2 class="tag-name" id="tag-<%= tag.name %>"><%= tag.name %></h2>
+
+            <% tag.posts.map(function(post) { %>
+                <li class="post-item">
+                    <%- partial('_partial/post/date', {post: post, class_name: 'meta'}) %>
+                    <span><%- partial('_partial/post/title', {post: post, index: true, class_name: ''}) %><span>
+                </li>
+            <% }) %>
+
+        </ul>
+    <% }) %>
+
+    <%- partial('_partial/pagination') %>
+</div>
