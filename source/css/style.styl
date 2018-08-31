@@ -43,14 +43,16 @@ body
   flex-direction: column
   antialias()
 
-#writing .post-list a
+#writing .post-list a,
+#archive .post-list a
   line-height: 1.2
   font-weight: bold
   color: #383838
   text-transform: capitalize
   background-image: none
 
-#writing .post-list a:hover
+#writing .post-list a:hover,
+#archive .post-list a:hover
   background-image: linear-gradient(transparent, transparent 4px, #3ce3e8 4px, #71f139)
 
 
@@ -63,7 +65,9 @@ body
   flex: 1
   @extend $base-style
 
-  p, ul, ol
+  p,
+  ul,
+  ol
     letter-spacing: .5px;
     font-size: 14px;
     line-height: 1.8;
@@ -76,6 +80,15 @@ body
     font-size: 12px;
     color: #c7254e;
     line-height: 24px;
+
+  em u,
+  u em
+    font-size: 12px;
+    color: #9b9ea0;
+    line-height: 24px;
+    text-decoration: none;
+    background-color: #fff;
+
 
   pre,
   code
